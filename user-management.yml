@@ -1,0 +1,53 @@
+Assume u have 1 see3rver 
+   3 groups 
+   10 users 
+
+   3 devops 
+   2 QA
+   1 Man
+
+   to see group information 
+
+   cat /etc/groups
+
+   /etc/
+
+   shadow 
+   group
+   passwd
+Adding password
+
+cat /etc/shadow
+
+password are stored in the shadow file
+
+userdmog -g landmark dan 
+
+to add a user to a group information
+ usermod -g landmark dan 
+
+ varify:
+
+  if user is added in the groups
+  id dan 
+
+  to varify which group a user belongs to :
+
+     groups ((username))
+     id {username }
+
+  can we add same user into multiple groups:
+    how many users are in a particular group 
+     To verify how many users belog to a group:
+                lid -g devops
+    How to lock a user:
+    usermod -L [username]
+
+    How to unlock a user :
+       usermod - U [username]
+  to switch user :
+
+  su - {username}
+  here password is required: 
+
+  from RU - NU , password is not required. 

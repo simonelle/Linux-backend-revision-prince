@@ -1,0 +1,37 @@
+Crontab has five commands: 
+crontab is used to automate task. 
+crone jobs takes aways manaual intervention 
+all users have crone tab access. 
+
+create a file name called .
+
+cron.allo
+touch /etc/cron.allow
+to varify jobs configured 
+ crontab = crone table 
+crontab -l  (to lists) to see how many job running 
+contab -e  {to edit }
+crontab -r  (to delete)
+crontab -l -u [username]
+to add users to the cron table, vi /etc/cron.allow and add the users. 
+
+How to configure cron.jobs:
+sudo
+cront tab would always be there for root user. 
+chmod u+x [filename]
+Troubleshooting crontab.
+
+    crond.service 
+service crond.service  status:
+
+  Crontab format: 
+    How to configure crontable. 
+  got to cront=generaition.org
+*/1 * * * * /home/ec2-user/linux-class26/hello.sh > /home/ec2-user/hello.log 2>$1
+
+--> redirect standard output but not error. 
+
+File Descriptor : 
+   0 =  standard output
+   1 = std output
+   2 = std eror
